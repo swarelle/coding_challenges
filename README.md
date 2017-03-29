@@ -1,4 +1,4 @@
-#Functionalities
+# Functionalities
 - Basic functionality as described in prompt
 - Optimized travel route (scripts automatically run the optimizing function)
 - Unit of distance (only by running the bash script)
@@ -15,7 +15,7 @@ Then uncomment the line "distances = findDist(cities, unit)" just above the code
 the user just commented out.
 
 
-#Running the code with the option of indicating units
+# Running the code with the option of indicating units
 1. Ensure that geopy is installed (on a mac, you can install it by running "pip install
 geopy" in the terminal)
 2. Run the following line in your terminal, and replace "/usr/local/bin/python" in
@@ -30,7 +30,7 @@ containing the "City, Country" pairs and "<unit>" should be replaced with either
 will automatically use miles as the unit.
 
 
-#Running the code without the option of indicating units (but uses stdin)
+# Running the code without the option of indicating units (but uses stdin)
 1. Ensure that geopy is installed (on a mac, you can install it by running "pip install
 geopy" in the terminal)
 2. Using the terminal, navigate to the folder containing my solution files and run
@@ -40,7 +40,7 @@ Where "<cities>" should be replaced with the name of the text file (in the same
 directory) containing the "City, Country" pairs.
 
 
-#Design choices
+# Design choices
 I wrote my solution in Python because of the following three reasons:
 - its simple, intuitive syntax
 - the ease of compiling and running the code from the terminal
@@ -58,7 +58,7 @@ above.
 As a note, both scripts default to using miles as the distance unit.
 
 
-#Next steps
+# Next steps
 Given more time, I would find out how to make Python scripts to allow for an option
 (I looked into optparse and argparse but didn't have time to implement them) or
 for bash scripts to allow for multiple optional arguments so that the user doesn't
