@@ -1,0 +1,12 @@
+[
+    {
+        "order_id": 2, 
+        "barista_id": 1, 
+        "start_time": 1
+    }, 
+    {
+        "order_id": 4, 
+        "barista_id": 2, 
+        "start_time": 2
+    }
+]
