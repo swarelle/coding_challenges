@@ -1,6 +1,6 @@
 Coding challenge completed for Fin for an internship application for Summer 2018.
 
-Original challenge description below: https://gist.github.com/johngraham262/9a78c4e2c68eb2fa6918c4f3636fd331
+Original challenge description: https://gist.github.com/johngraham262/9a78c4e2c68eb2fa6918c4f3636fd331
 
 ## Running the program ##
 Navigate to the folder containing cafe.sh. The program is run with the following
