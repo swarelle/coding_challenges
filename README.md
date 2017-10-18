@@ -1,3 +1,5 @@
+Original coding challenge description: https://docs.google.com/document/d/1fU0fiIX6Ei7tquLBWTwCPPH1pu87qmpsJ4K6T0VnLIU/edit
+
 ## Running the program ##
 Note that this program is in Python 2 syntax.
 Navigate to the folder containing genre.py. The program is run with the following
