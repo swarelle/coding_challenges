@@ -35,4 +35,4 @@ any exceptions when trying to get a max score out of an empty dictionary.
 
 
 ## Total time spent ##
-Three hours.
+Two hours.
