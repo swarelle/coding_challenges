@@ -1,0 +1,44 @@
+#!/usr/bin/python
+
+import sys
+import os
+
+def main():
+    query = sys.argv[1]
+    path = sys.argv[2]
+    path_objects = os.listdir(path)
+    files = []
+    subdirs = []
+    for file in path_objects:
+        file_path = os.path.join(path, file)
+        if os.path.isdir(file_path):
+            subdirs.append(file_path)
+        else:
+            files.append(file_path)
+
+    ind = 0
+    while ind < len(subdirs):
+        subdir = subdirs[ind]
+        path_objects = os.listdir(subdir)
+        for file in path_objects:
+            file_path = os.path.join(subdir, file)
+            if os.path.isdir(file_path):
+                subdirs.append(file_path)
+            else:
+                files.append(file_path)
+        ind += 1
+
+    found = []
+    for file_path in files:
+        file = open(file_path, "r")
+        abs_path = os.path.abspath(file_path)
+        line_num = 1
+        for line in file:
+            if query in line:
+                found.append([abs_path, line_num, line.strip()])
+            line_num += 1
+
+    for result in found:
+        print(result[0] + ":" + str(result[1]) + "\t" + result[2])
+
+main()
